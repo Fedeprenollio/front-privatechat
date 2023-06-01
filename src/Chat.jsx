@@ -69,7 +69,7 @@ const Chat = () => {
 
       <form onSubmit={handleSubmitRoom} action="">
         <input type="text" name="room" />
-        <button type="submit">Enviar sala</button>
+        <button type="submit">Codigo de la sala </button>
       </form>
     </div>
   );
