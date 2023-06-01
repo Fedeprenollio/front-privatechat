@@ -1,5 +1,5 @@
-import  { useEffect, useState } from "react";
-import io from "socket.io-client";
+import { useEffect, useState } from "react";
+import { io } from "socket.io-client";
 
 const Chat = () => {
   const [socket, setSocket] = useState(null);
@@ -43,7 +43,7 @@ const Chat = () => {
     setInputValue(e.target.value);
     console.log(e.target.value);
   };
-console.log(room)
+  console.log(room);
   const handleSubmitRoom = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -70,7 +70,6 @@ console.log(room)
       <form onSubmit={handleSubmitRoom} action="">
         <input type="text" name="room" />
         <button type="submit">Enviar sala</button>
-
       </form>
     </div>
   );
